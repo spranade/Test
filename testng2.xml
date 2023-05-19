@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="smoke">
+
+	<test name="3. verify a,d,m of two number">
+		<parameter name="ap1" value="70"></parameter>
+		<parameter name="ap2" value="50"></parameter>
+		<parameter name="ap3" value="120"></parameter>
+
+		<parameter name="dp1" value="100"></parameter>
+		<parameter name="dp2" value="10"></parameter>
+		<parameter name="dp3" value="10"></parameter>
+
+		<parameter name="mp1" value="10"></parameter>
+		<parameter name="mp2" value="10"></parameter>
+		<parameter name="mp3" value="100"></parameter>
+
+
+		<classes>
+			<class name="Calc.math1">
+				<methods>
+					<include name="add"></include>
+				</methods>
+			</class>
+
+			<class name="Calc.math2">
+				<methods>
+					<include name="div"></include>
+					<include name="mul"></include>
+				</methods>
+			</class>
+			
+		</classes>
+	</test> <!-- Test -->
+
+
+
+	<test name="4. verify a,m,s,d of two numbers">
+		<parameter name="ap1" value="10"></parameter>
+		<parameter name="ap2" value="10"></parameter>
+		<parameter name="ap3" value="20"></parameter>
+
+		<parameter name="mp1" value="100"></parameter>
+		<parameter name="mp2" value="100"></parameter>
+		<parameter name="mp3" value="10000"></parameter>
+
+		<parameter name="sp1" value="100"></parameter>
+		<parameter name="sp2" value="10"></parameter>
+		<parameter name="sp3" value="90"></parameter>
+
+		<parameter name="dp1" value="200"></parameter>
+		<parameter name="dp2" value="100"></parameter>
+		<parameter name="dp3" value="2"></parameter>
+		<classes>
+			<class name="Calc.math1">
+				<methods>
+					<include name="add"></include>
+					<include name="sub"></include>
+				</methods>
+			</class>
+			<class name="Calc.math2">
+				<methods>
+					<include name="mul"></include>
+					<include name="div"></include>
+				</methods>
+			</class>
+			
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
